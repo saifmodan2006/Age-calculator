@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg , #09be42, #b086ce);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+div.text h1{
+   font-weight: 800;
+   font-size: 40px;
+   margin-bottom: 15px;
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+}
+div.text h1::after{
+    content: "";
+    display: block;
+    width: 0%;
+    margin: auto;
+    height: 3px;
+    background: rgb(86, 239, 216);
+    margin-top: 4px;
+    transition: 0.5s;
+}
+div.text h1:hover::after{
+    width: 100%;
+}
+div.text h3{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+form input{
+   width: 250px;
+   height: 35px;
+   border: none ;
+   border-radius: 5px;
+   text-align: center;
+   outline: none;
+   padding: 10px 0px;
+   cursor: pointer;
+   box-shadow: 0px 0px 7px 0px black;
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 15px;
+   margin-bottom: 16px;
+   
+}
+
+form input:focus{
+    border: 1px solid brown;
+}
+
+div.btn button{
+    width: 200px;
+    height: 30px;
+    padding: 20px 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 18px;
+    border: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: yellow;
+    margin-top: 10px;
+}
+div.btn button:hover{
+    background-color: rgb(235, 235, 57);
+    box-shadow: 0px 0px 30px 0px yellow;
+
+}
+
+#result{
+  font-size: 25px;
+  margin-top: 15px;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 500;
+
+}
